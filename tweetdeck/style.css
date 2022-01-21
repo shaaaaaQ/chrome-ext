@@ -1,0 +1,51 @@
+* {
+    border: none !important;
+}
+
+/* columnのスクロールバーを非表示に */
+.column-scroller {
+    overflow: hidden !important;
+}
+
+/* columnの番号を非表示に */
+.column-number {
+    display: none;
+}
+
+/* columnを移動するときのハンドルを非表示に */
+.column-drag-handle {
+    display: none !important;
+}
+
+/* '名前 Retweeted' を非表示に..? */
+.tweet-context {
+    display: none;
+}
+
+/* 'Show this thread' を非表示に..? */
+.js-show-this-thread,
+.quoted-tweet:not(.quoted-tweet-unavailable) p.txt-mute {
+    display: none;
+}
+
+/* Replying to を非表示に */
+.other-replies {
+    display: none;
+}
+
+/* コメント、リツイート、いいねのボタンを非表示 */
+.tweet-footer.cf {
+    display: none !important;
+}
+
+/* メニューのいらないやつを非表示に */
+.dropdown-menu a:not([data-action='mute']):not([data-action='reference-to']):not([data-action='globalSettings']),
+.drp-h-divider,
+.caret {
+    display: none !important;
+}
+
+/* ユーザーの名前とアイコンを押してもプロフィールが出てこないように */
+.account-link {
+    pointer-events: none;
+}
