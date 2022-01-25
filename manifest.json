@@ -18,6 +18,14 @@
             "css": [
                 "tweetdeck/style.css"
             ]
+        },
+        {
+            "matches": [
+                "https://krunker.io/*"
+            ],
+            "css": [
+                "krunker/style.css"
+            ]
         }
     ]
 }
