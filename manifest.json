@@ -25,6 +25,9 @@
             ],
             "css": [
                 "krunker/style.css"
+            ],
+            "js": [
+                "krunker/account-manager.js"
             ]
         },
         {
