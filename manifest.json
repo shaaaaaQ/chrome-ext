@@ -26,6 +26,14 @@
             "css": [
                 "krunker/style.css"
             ]
+        },
+        {
+            "matches": [
+                "https://twitter.com/*"
+            ],
+            "css": [
+                "twitter/style.css"
+            ]
         }
     ]
 }
