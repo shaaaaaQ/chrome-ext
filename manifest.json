@@ -8,7 +8,7 @@
                 "https://www.google.com/search*"
             ],
             "css": [
-                "google-search/style.css"
+                "src/google-search/style.css"
             ]
         },
         {
@@ -16,7 +16,7 @@
                 "https://tweetdeck.twitter.com/*"
             ],
             "css": [
-                "tweetdeck/style.css"
+                "src/tweetdeck/style.css"
             ]
         },
         {
@@ -24,10 +24,10 @@
                 "https://krunker.io/*"
             ],
             "css": [
-                "krunker/style.css"
+                "src/krunker/style.css"
             ],
             "js": [
-                "krunker/account-manager.js"
+                "src/krunker/account-manager.js"
             ]
         },
         {
@@ -35,7 +35,7 @@
                 "https://twitter.com/*"
             ],
             "css": [
-                "twitter/style.css"
+                "src/twitter/style.css"
             ]
         }
     ]
