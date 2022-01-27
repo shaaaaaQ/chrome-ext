@@ -4,30 +4,56 @@ function getAccountsObject() {
     return JSON.parse(localStorage.getItem('accounts') || '{}');
 }
 
+function setAccountsObject(obj) {
+    localStorage.setItem('accounts', JSON.stringify(obj));
+}
+
 function addAccount(username, password) {
     if (!username || !password) return;
     const accounts = getAccountsObject();
     accounts[username] = btoa(password);
-    localStorage.setItem('accounts', JSON.stringify(accounts));
+    setAccountsObject(accounts);
+}
+
+function removeAccount(username) {
+    if (!username) return;
+    const accounts = getAccountsObject();
+    delete accounts[username];
+    setAccountsObject(accounts);
 }
 
 function createAccountListElement() {
     removeAccountListElement();
 
-    const div = document.createElement('div');
-    div.id = 'account-list';
+    const accountListElem = document.createElement('div');
+    menuWindow.firstChild.appendChild(accountListElem);
+    accountListElem.id = 'account-list';
+
     const accounts = getAccountsObject();
     Object.keys(accounts).forEach(username => {
+        const itemElem = document.createElement('div');
+        accountListElem.appendChild(itemElem);
+        itemElem.style.display = 'flex';
+
         const usernameElem = document.createElement('div');
+        itemElem.appendChild(usernameElem);
         usernameElem.appendChild(document.createTextNode(username));
         usernameElem.addEventListener('click', () => {
             document.getElementById('accName').value = username;
             document.getElementById('accPass').value = atob(accounts[username]);
         });
-        div.appendChild(usernameElem);
-    });
 
-    menuWindow.firstChild.appendChild(div);
+        const removeButton = document.createElement('div');
+        itemElem.appendChild(removeButton);
+        removeButton.classList.add('material-icons');
+        removeButton.style.marginLeft = 'auto';
+        removeButton.style.color = '#ed4242';
+        removeButton.appendChild(document.createTextNode('delete_forever'));
+        removeButton.addEventListener('click', () => {
+            removeAccount(username);
+            createAccountListElement();
+        });
+    });
 }
 
 function removeAccountListElement() {
@@ -37,6 +63,7 @@ function removeAccountListElement() {
 
 function createAddButtonElement() {
     const addButton = document.createElement('div');
+    menuWindow.firstChild.lastChild.appendChild(addButton);
     addButton.classList.add('accBtn', 'button', 'buttonG');
     addButton.appendChild(document.createTextNode('Add'));
     addButton.addEventListener('click', () => {
@@ -45,7 +72,6 @@ function createAddButtonElement() {
         addAccount(username, password);
         createAccountListElement();
     });
-    menuWindow.firstChild.lastChild.appendChild(addButton);
 }
 
 const observer = new MutationObserver(() => {
