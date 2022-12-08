@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@900&display=swap');
+
 :root {
     /* 黒 0.2 */
     --bg-1: rgba(0, 0, 0, 0.2);
@@ -21,6 +23,11 @@
     100% {
         opacity: 1;
     }
+}
+
+*:not(.material-icons):not(.material-icons-outlined) {
+    font-family: 'Noto Sans JP', sans-serif !important;
+    font-size: 25px !important;
 }
 
 /* Main Menu */
