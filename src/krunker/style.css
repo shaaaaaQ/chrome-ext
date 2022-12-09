@@ -24,7 +24,7 @@
 }
 
 *:not(.material-icons):not(.material-icons-outlined) {
-    font-family: sans-serif !important;
+    font-family: Arial, Helvetica, sans-serif !important;
     font-weight: bold !important;
 }
 
@@ -89,6 +89,10 @@
 #signedInHeaderBar {
     background: none !important;
     padding: 0 !important;
+}
+
+#signedInHeaderBar *:not(.material-icons):not(.material-icons-outlined) {
+    font-size: 25px !important;
 }
 
 #mLevelCont {
@@ -267,10 +271,6 @@
 }
 
 /* Chat */
-#chatUI * {
-    font-size: 20px !important;
-}
-
 #chatHolder {
     left: 0 !important;
     bottom: 16vh !important;
@@ -288,9 +288,14 @@
     border-radius: 0 !important;
 }
 
+#chatList * {
+    font-size: 25px !important;
+}
+
 #chatInput {
     background: none !important;
     border: none !important;
+    font-size: 20px !important;
 }
 
 /* Menu Window */
@@ -357,6 +362,11 @@ input[type="color"] {
     border: 4px solid var(--bor-1) !important;
 }
 
+/* Menu Window - Profile */
+#statHolder * {
+    font-size: 20px !important;
+}
+
 /* Menu Window - Settings */
 .settingsHeader {
     background: var(--bg-2) !important;
@@ -398,6 +408,10 @@ input[type="color"] {
     display: none !important;
 }
 
+#leaderContainer * {
+    font-size: 25px !important;
+}
+
 .healthBarSeg {
     margin-right: 0 !important;
     border-radius: 0 !important;
@@ -414,9 +428,17 @@ input[type="color"] {
     left: 0 !important;
 }
 
+#topLeftHolder *:not(#timerVal) {
+    font-size: 25px !important;
+}
+
 #timerDisplay {
     background: var(--bg-1) !important;
     border-radius: 0 !important;
+}
+
+#timerVal {
+    font-size: 32px !important;
 }
 
 #leaderDisplay {
@@ -427,6 +449,10 @@ input[type="color"] {
 #topRight {
     top: 0 !important;
     right: 0 !important;
+}
+
+#topRight * {
+    font-size: 25px !important;
 }
 
 .countIcon {
@@ -501,6 +527,14 @@ input[type="color"] {
 .endSection,
 .endSection {
     background: none !important;
+}
+
+#endMidHolder * {
+    font-size: 25px !important;
+}
+
+#matchVoteHolder * {
+    font-size: 20px !important;
 }
 
 /* LaF Client */
