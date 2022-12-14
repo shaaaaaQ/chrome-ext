@@ -17,6 +17,9 @@
             ],
             "css": [
                 "src/tweetdeck/style.css"
+            ],
+            "js": [
+                "src/tweetdeck/paste.js"
             ]
         },
         {
