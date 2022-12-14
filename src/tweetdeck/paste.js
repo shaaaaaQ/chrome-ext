@@ -7,7 +7,6 @@ s.textContent = `
 let jquery;
 document.addEventListener('paste', (e) => {
     if (!jquery) {
-        console.log('init');
         jquery = new moduleraid().findConstructor('jquery:')[0][1];
     }
     if (e.clipboardData.types[0] !== 'Files') return;
