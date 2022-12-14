@@ -1,5 +1,5 @@
 const mr = document.createElement('script');
-mr.src = 'https://unpkg.com/moduleraid/dist/moduleraid.umd.js';
+mr.src = 'https://unpkg.com/moduleraid/dist/moduleraid.iife.js';
 document.head.appendChild(mr);
 
 const s = document.createElement('script');
@@ -7,7 +7,7 @@ s.textContent = `
 let jquery;
 document.addEventListener('paste', (e) => {
     if (!jquery) {
-        jquery = new moduleraid().findConstructor('jquery:')[0][1];
+        jquery = new ModuleRaid().findConstructor('jquery:')[0][1];
     }
     if (e.clipboardData.types[0] !== 'Files') return;
     const files = [e.clipboardData.items[0].getAsFile()];
