@@ -10,8 +10,7 @@ document.addEventListener('paste', (e) => {
         console.log('init');
         jquery = new moduleraid().findConstructor('jquery:')[0][1];
     }
-    if (e.clipboardData.types[0] !== 'Files') return console.log('no');
-    console.log('paste');
+    if (e.clipboardData.types[0] !== 'Files') return;
     const files = [e.clipboardData.items[0].getAsFile()];
     jquery(document).trigger('uiFilesAdded', { files });
 });
