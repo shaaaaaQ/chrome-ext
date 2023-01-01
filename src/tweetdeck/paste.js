@@ -1,5 +1,5 @@
 const mr = document.createElement('script');
-mr.src = 'https://unpkg.com/moduleraid/dist/moduleraid.iife.js';
+mr.src = 'https://unpkg.com/moduleraid@6.0.0/dist/moduleraid.iife.js';
 document.head.appendChild(mr);
 
 const s = document.createElement('script');
