@@ -5,7 +5,7 @@
     "content_scripts": [
         {
             "matches": [
-                "https://www.google.com/search*"
+                "*://www.google.com/search*"
             ],
             "css": [
                 "src/google-search/style.css"
@@ -13,7 +13,7 @@
         },
         {
             "matches": [
-                "https://tweetdeck.twitter.com/*"
+                "*://tweetdeck.twitter.com/*"
             ],
             "css": [
                 "src/tweetdeck/style.css"
@@ -24,7 +24,7 @@
         },
         {
             "matches": [
-                "https://krunker.io/*"
+                "*://krunker.io/*"
             ],
             "css": [
                 "src/krunker/style.css"
@@ -35,7 +35,7 @@
         },
         {
             "matches": [
-                "https://twitter.com/*"
+                "*://twitter.com/*"
             ],
             "css": [
                 "src/twitter/style.css"
@@ -45,7 +45,7 @@
     "web_accessible_resources": [
         {
             "matches": [
-                "https://tweetdeck.twitter.com/*"
+                "*://tweetdeck.twitter.com/*"
             ],
             "resources": [
                 "src/tweetdeck/paste-inject.js",
