@@ -3,7 +3,7 @@
   "name": "my-chrome-extensions",
   "version": "0.1.0",
   "author": "shaaaaaQ",
-  "license": "MIT",
+  "license": "Unlicense",
   "scripts": {},
   "devDependencies": {
     "eslint": "^8.7.0"
