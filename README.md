@@ -1,4 +1,7 @@
 ## 自分用のChromeの拡張機能
+```bash
+npm i
+```
 - Google検索のいらない情報とか邪魔なやつを非表示
 - TweetDeck
     - CSS

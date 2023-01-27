@@ -1,7 +1,7 @@
 {
     "name": "My Chrome Extensions",
     "version": "0.1.0",
-    "manifest_version": 2,
+    "manifest_version": 3,
     "content_scripts": [
         {
             "matches": [
@@ -39,6 +39,17 @@
             ],
             "css": [
                 "src/twitter/style.css"
+            ]
+        }
+    ],
+    "web_accessible_resources": [
+        {
+            "matches": [
+                "https://tweetdeck.twitter.com/*"
+            ],
+            "resources": [
+                "src/tweetdeck/paste-inject.js",
+                "node_modules/moduleraid/dist/moduleraid.iife.js"
             ]
         }
     ]
