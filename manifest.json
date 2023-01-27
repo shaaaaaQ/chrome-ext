@@ -49,7 +49,7 @@
             ],
             "resources": [
                 "src/tweetdeck/paste-inject.js",
-                "node_modules/moduleraid/dist/moduleraid.iife.js"
+                "lib/moduleraid/moduleraid.iife.js"
             ]
         }
     ]

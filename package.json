@@ -7,8 +7,5 @@
   "scripts": {},
   "devDependencies": {
     "eslint": "^8.7.0"
-  },
-  "dependencies": {
-    "moduleraid": "6.0.0"
   }
 }

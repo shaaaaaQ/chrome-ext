@@ -1,5 +1,5 @@
 const mr = document.createElement('script');
-mr.src = chrome.runtime.getURL('node_modules/moduleraid/dist/moduleraid.iife.js');
+mr.src = chrome.runtime.getURL('lib/moduleraid/moduleraid.iife.js');
 document.head.appendChild(mr);
 
 const s = document.createElement('script');
