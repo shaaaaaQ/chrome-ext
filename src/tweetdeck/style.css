@@ -29,8 +29,13 @@
 }
 
 /* Replying to を非表示に */
+/*
 .other-replies {
     display: none;
+}
+*/
+.other-replies-link {
+    pointer-events: none
 }
 
 /* コメント、リツイート、いいねのボタンを非表示 */
