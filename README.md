@@ -4,8 +4,7 @@
     - CSS
     - 画像を貼り付けれられるように
 - Twitterのトレンドを非表示(日本語じゃないと動かない)
-- Krunker
+- Krunker (多分もう動かん)
     - CSS
-        - CSSだけ使いたいときは`@import url('https://shmhm.vercel.app/krunker-css/1.css');`
     - アカウント管理機能
         - パスワードをlocalStorageに平文で保存するから乗っ取られてもいい人だけ使ってね
