@@ -40,6 +40,14 @@
             "css": [
                 "src/twitter/style.css"
             ]
+        },
+        {
+            "matches": [
+                "<all_urls>"
+            ],
+            "js": [
+                "src/notranslate/script.js"
+            ]
         }
     ],
     "web_accessible_resources": [
