@@ -35,7 +35,8 @@
         },
         {
             "matches": [
-                "*://twitter.com/*"
+                "*://twitter.com/*",
+                "*://x.com/*"
             ],
             "css": [
                 "src/twitter/style.css"

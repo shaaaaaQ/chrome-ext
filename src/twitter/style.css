@@ -1,3 +1,4 @@
-div[aria-label="タイムライン: トレンド"] {
-    display: none !important;
+/* Grokのツイートを非表示 */
+article[data-testid="tweet"]:has(a[href^="/i/grok/share/"]) {
+    display: none;
 }
