@@ -2,3 +2,12 @@
 article[data-testid="tweet"]:has(a[href^="/i/grok/share/"]) {
     display: none;
 }
+
+/* 右下のGrokのやつ */
+div[data-testid="GrokDrawer"] {
+    display: none;
+}
+
+button[aria-label="プロフィールの要約"] {
+    display: none;
+}
