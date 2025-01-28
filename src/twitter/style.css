@@ -18,6 +18,6 @@ div:has(>div>a[href="https://help.x.com/rules-and-policies/authenticity"]) {
 }
 
 /* アナリティクスの広告 */
-div:has(>div>div>a[href="/i/premium_sign_up"]) {
+article[data-testid="tweet"] div:has(>div>div>a[href="/i/premium_sign_up"]) {
     display: none;
 }
