@@ -16,3 +16,8 @@ button[aria-label="プロフィールの要約"] {
 div:has(>div>a[href="https://help.x.com/rules-and-policies/authenticity"]) {
     display: none;
 }
+
+/* アナリティクスの広告 */
+div:has(>div>div>a[href="/i/premium_sign_up"]) {
+    display: none;
+}
